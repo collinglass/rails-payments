@@ -1,0 +1,257 @@
+/**
+* Shows how you can use CSS to style your Element's container.
+* These classes are added to your Stripe Element by default.
+* You can override these classNames by using the options passed
+* to the CardElement component.
+* https://stripe.com/docs/js/elements_object/create_element?type=card#elements_create-options-classes
+*/
+
+* {
+  font-size: 15px;
+  font-variant: normal;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+  background: #f6f8fa;
+  color: #4c555a;
+  min-height: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+main {
+  -ms-align-items: center;
+  align-items: center;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
+
+.container {
+  max-width: 550px;
+  padding: 100px 0;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  padding-bottom: 2rem;
+}
+
+h1 {
+  margin-bottom: 1rem;
+}
+
+p > code {
+  padding: 5px 8px;
+  border-radius: 3px;
+  background-color: #ffffff;
+  color: #bbbff4;
+}
+
+.form-container {
+  display: block;
+}
+
+footer {
+  width: 100%;
+  padding-top: 1rem;
+  text-align: center;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+}
+
+form {
+  max-width: 480px;
+  width: 100%;
+  margin: 20px 0;
+}
+
+footer {
+  width: 100%;
+  max-width: 480px;
+  clear: both;
+}
+
+a {
+  color: #424770;
+  -webkit-transition: color 0.4s ease-in-out;
+  -o-transition: color 0.4s ease-in-out;
+  transition: color 0.4s ease-in-out;
+}
+
+a:visited {
+  color: #6772e5;
+}
+
+a:hover {
+  color: #24b47e;
+  -webkit-transition: color 0.2s ease-in-out;
+  -o-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+}
+
+.top-right {
+  text-align: right;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+}
+
+.group,
+.StripeElement {
+  background: white;
+  box-shadow: 0 7px 14px 0 rgba(49, 49, 93, 0.1),
+    0 3px 6px 0 rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+label {
+  position: relative;
+  color: #8898aa;
+  font-weight: 400;
+  height: 40px;
+  line-height: 40px;
+  margin-left: 20px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  -o-flex-direction: row;
+  flex-direction: row;
+}
+
+.group label:not(:last-child) {
+  border-bottom: 1px solid #f0f5fa;
+}
+
+label > span {
+  width: 150px;
+  text-align: right;
+  margin-right: 30px;
+}
+
+.field {
+  background: transparent;
+  font-weight: 400;
+  border: 0;
+  color: #31325f;
+  outline: none;
+  flex: 1;
+  padding-right: 10px;
+  padding-left: 10px;
+  cursor: text;
+}
+
+.field::-webkit-input-placeholder {
+  color: #cfd7e0;
+}
+.field::-moz-placeholder {
+  color: #cfd7e0;
+}
+
+button {
+  display: block;
+  background: #666ee8;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 7px 14px 0 rgba(49, 49, 93, 0.1),
+    0 3px 6px 0 rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
+  border: 0;
+  margin-top: 20px;
+  font-size: 15px;
+  font-weight: 500;
+  width: 100%;
+  height: 40px;
+  line-height: 38px;
+  outline: none;
+}
+
+button:focus {
+  background: #555abf;
+}
+
+button:active {
+  background: #43458b;
+}
+
+.outcome {
+  float: left;
+  width: 100%;
+  padding-top: 8px;
+  min-height: 24px;
+  text-align: center;
+}
+
+.success,
+.error {
+  font-size: 13px;
+}
+
+.hide {
+  display: none;
+}
+
+.success.visible,
+.error.visible {
+  display: inline;
+}
+
+.error {
+  color: #e4584c;
+}
+
+.success {
+  color: #666ee8;
+}
+
+.success .token {
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.StripeElement {
+  padding: 14px 12px;
+}
+
+.StripeElement--focus {
+  box-shadow: 0 1px 3px 0 #cfd7df;
+}
+
+.StripeElement--invalid {
+  border-color: #fa755a;
+}
+
+.StripeElement--webkit-autofill {
+  background-color: #fefde5 !important;
+}

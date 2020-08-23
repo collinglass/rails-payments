@@ -1,0 +1,24 @@
+.payment-group {
+  background: white;
+  box-shadow: 0 7px 14px 0 rgba(49, 49, 93, 0.1),
+    0 3px 6px 0 rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
+  margin-bottom: 20px;
+  overflow-y: scroll;
+  height: 500px;
+  width: 800px;
+}
+
+label.payment-label > span {
+  width: 400px;
+  text-align: right;
+  margin-right: 30px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+label > pre {
+  background: #eee;
+  border-radius: 5px;
+  padding: 0 10px;
+}
